@@ -75,7 +75,3 @@ app/                    --> all of the source files for the application
   index.html            --> app layout file (the main html template file of the app)
 dist/                   --> The build would be found here which could be pushed to production
 ```
-
-### Contribute 
-
-As this my first open source project please have a look at this and suggest feedbacks, better contribute. 
