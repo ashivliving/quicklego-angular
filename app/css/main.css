@@ -461,6 +461,7 @@ body.modal-open {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-    
+.temp-size {
+    font-size: 12px;
+    height: 23px;
 }
