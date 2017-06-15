@@ -1,0 +1,2062 @@
+<script type=”text/javascript”>
+    function thebackground() {
+        $('div.background img').css({'opacity': '0.0'});
+        $('div.background img:first').css({'opacity': '1.0'});
+        setInterval('change()',5000);
+    }
+    function change() {
+        var current = ($('div.background img.show')? $('div.background img.show') : $('div.background img:first'));
+        if ( current.length == 0 ) current = $('div.background img:first');
+        var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.background img:first') :current.next()) : $('div.background img:first'));
+        next.css({opacity: 0.0})
+        .addClass('show')
+        .animate({opacity: 1.0}, 1000);
+        current.animate({opacity: 0.0}, 1000)
+        .removeClass('show');
+    };
+    $(document).ready(function() {
+        thebackground();
+        $('div.background').fadeIn(1000);
+        $('div.background img').fadeIn(1000);
+    });
+</script>
+
+
+    <div class="page-top-bg">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li>
+                            <a class="page-scroll" href="#"><span class="glyphicon glyphicon-earphone"></span> 7787000846</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#home#how-it-works">How it Works?</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#/home#about">About Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#/home#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#/home#advantages">Advantages</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#/home#why-choose-us">Why Choose Us?</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#/home#pricing">Pricing</a>
+                        </li>
+                        <!-- <li>
+                            <a class="page-scroll" href="#">Faq</a>
+                        </li> -->
+                        <li>
+                            <a class="page-scroll" href="#/home#support">Other Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Section -->
+        <div class="bgImageMain" style="background-image: url();">
+            <div class="background">
+                <img src="images/bg.png">
+                <img src="images/bg2.jpg">
+                <img src="images/bg3.jpg">
+            </div>
+            <section id="intro" class="intro-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 intro-wrapper">
+
+                            <h1 class="heading">
+                                The easiest & smartest way to solemnize and<br/>Register your marriage
+                            </h1>
+
+                            <div class="text-center">
+                                <label class="white new-font" style="font-size: 26px;">Legalize your Marriage from the comfort of your home</label><br/>
+                                <label class="white new-font">No running around. Services at Doorstep. Save your precious time and money</label>
+                            </div>
+                            <br/>
+                            <div class="text-center">
+                                <!-- <a href="#" class="myBtn press">Apply Now</a><br/> -->
+                                <a href="#/home#services" class="newBtn">Apply Now <span class="glyphicon glyphicon-triangle-right"></span></a>
+                            </div>
+                            
+                            <!-- <div class="col-xs-12 col-sm-4">
+                                <div class="three-box-wrap">
+                                    <div class="col-xs-3">
+                                        <img src="images/icons/ic_touch_app_white_24dp_2x.png">
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>Apply Online</h2>
+                                        <p>Register for your marriage license by applying online.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="three-box-wrap">
+                                    <div class="col-xs-3">
+                                        <img src="images/icons/ic_today_white_24dp_2x.png">
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>Take An Appointment</h2>
+                                        <p>Take an appointment from the comfort of your own home.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="three-box-wrap">
+                                    <div class="col-xs-3">
+                                        <img src="images/icons/ic_assignment_turned_in_white_24dp_2x.png">
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>Get Your Marriage Certificate</h2>
+                                        <p>Your marriage certificate is just a few clicks away.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"><div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Advantage Section -->
+    <section id="how-it-works" class="about-section">
+        <div class="container">
+            <div class="row">
+                <h1 class="main-headings1">
+                    How It Works?
+                </h1>
+                <br/>
+                <h1 class="main-headings" style="text-align: left;">GET YOUR MARRIAGE REGISTERED IN 4 EASY STEPS:-</h1>
+                <br/>
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <img src="images/hw1.png" style="width: 100px">
+                        <p class="hw-heading">Click the Apply button</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <img src="images/hw2.png" style="width: 100px">
+                        <p class="hw-heading">Fill your details in the Form</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <img src="images/hw3.jpg" style="width: 100px">
+                        <p class="hw-heading">Book an Appointment for collection of your documents</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                        <img src="images/hw4.png" style="width: 100px">
+                        <p class="hw-heading">Get Doorstep Delivery of Marriage Certificate</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+                <hr/>
+                
+                <ol class="order-list">
+                    <li>Call at 77870-00846 or click the Apply button & Take an Appointment at your own convenience, absolutely at the comfort of your home,</li>
+                    <li>Our Associate will collect your documents from your doorstep, prepare for filing, submit it before the concerned Marriage Officer & inform you the date for personal appearance,</li>
+                    <li>Appear on the scheduled day for mandatory verification of documents,</li>
+                    <li>Get your Marriage Certificate prepared and delivered at the place of your choice.</li>
+                </ol>
+                <p class="hw-heading" style="padding-left: 40px;"><span style="color: #e4047e;"><b>Note:</b></span> Our legal experts will be available for help during this process.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wrapper">
+                        <div class="col-xs-12 col-sm-6 no-padding">
+                            <h1 class="main-headings">
+                                About Us
+                            </h1>
+                            <p class="aboutText">
+                                Quickbond is a technology driven web based platform aimed at facilitating the solemnization and registration of marriages, most importantly from the comfort of your home and at the click of a button.
+                            </p>
+                            <br/>
+                            
+                            <p class="aboutTextHeading" title="Click for detail" data-toggle="modal" data-target="#about1">
+                                <span class="glyphicon glyphicon-globe bigGlyph pull-left"></span>
+                                <span style="padding-top: 10px;">Web based platform to save time, money and hassle</span>
+                                <span class="glyphicon glyphicon-menu-right color" style="margin-left: 5px; cursor: pointer;"></span>
+                                <!-- <span class="aboutText">
+                                    We all know about the hassles that we need to face when we need to perform tasks in which we need to visit courts of law or government offices, prepare different documents, fulfill rudimentary formalities,
+                                </span> -->
+                            </p>
+                            <br/>
+                            <p class="aboutTextHeading" title="Click for detail" data-toggle="modal" data-target="#about2">
+                                <span class="glyphicon glyphicon-home bigGlyph pull-left"></span>
+                                <span style="padding-top: 10px;">Hassle-free Services guaranteed at your Doorstep</span>
+                                <span class="glyphicon glyphicon-menu-right color" style="margin-left: 5px; cursor: pointer;"></span>
+                                <!-- <span class="aboutText">
+                                    We all know about the hassles that we need to face when we need to perform tasks in which we need to visit courts of law or government offices, prepare different documents, fulfill rudimentary formalities,
+                                </span> -->
+                            </p>
+                            <br/>
+                            <p class="aboutTextHeading" title="Click for detail" data-toggle="modal" data-target="#about3">
+                                <span class="glyphicon glyphicon-headphones bigGlyph pull-left"></span>
+                                <span style="padding-top: 10px;">Active Support & Assistance from Industry Experts</span>
+                                <span class="glyphicon glyphicon-menu-right color" style="margin-left: 5px; cursor: pointer;"></span>
+                                <!-- <span class="aboutText">
+                                    We all know about the hassles that we need to face when we need to perform tasks in which we need to visit courts of law or government offices, prepare different documents, fulfill rudimentary formalities,
+                                </span> -->
+                            </p>
+                            
+                        </div>
+                        <div class="col-xs-12 col-sm-6 text-center no-padding">
+                            <img src="images/marriage_img_3.jpg">
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="aboutText" style="padding-right: 0; font-size: 16px; font-weight: bold;">
+                                <br/>
+                                No wonder, Indian marriages or weddings as they are popularly known as, are epitome of extravaganza, opulence, class and luxury. Indian marriage, mostly, are celebrated uniquely with ancient traditions and rituals, poised with the priest’s guidance and witnessed & rejoiced by family and friends. Since, these marriages (weddings) embrace such time-honored rituals and practices, marriages (weddings) especially in India, are considered as a knot of souls where love, bonding and communion are manifested ceremonially.
+                                <br/>
+                                True, such rituals and customs have their own importance, but today it is very necessary to make the marriage legal. So, registration of marriage is very important and necessary. Given the fact that the society is changing every day and posing different kinds of challenges, complexities and difficulties in people’s life, registration of Marriage can prove to be a panacea for most of the legal hassles.
+                                <br/>
+                                Nonetheless, Marriage registration is very essential for obtaining an established status of legality for the couple for being in a matrimonial relationship. A marriage certificate does not mean just 'another license' that one must obtain. It upholds the sanctity and legality of a marriage. It is in fact a very essential document that couples generally tend to overlook in the euphoria and fanfare of their marriage.
+                                <br/>
+                                However, most of the couples perceive it as that 'it is a waste of time, who needs a marriage certificate? etc.' But, the truth is that such a legal authorization for marriage is indispensable for the couple. As a matter of rule, marriage registration is now compulsory. As per the Honorable Supreme Court directive dated 14.2.2006, it is mandatory for the couples to register their marriages, no matter which religion, caste or creed they belong to. And if the marriage is not registered, this can be seen as a crime and is a punishable offence.
+                                <br/>
+                                Interestingly, most of the couples often wonder as to how to apply for marriage certificate or how to register their marriage, most of them have to scout for a lawyer/agent to help them register their marriage, most of them could barely make time from their busy schedule to take the hassle of visiting offices for information and getting the marriage registered. 
+                                <br/>
+                                We, at Quickbond facilitate simple, hassle-free, quick and affordable both solemnization and registration of your marriage. You can apply for your marriage registration quite conveniently and easily through our online services. We are committed to ensure that most of the process of marriage registration is completed from the comfort of your home and without you having to devote your precious time, money and energy on such exercise. We ensure that all documents to register your marriage are properly filled and filed before the concerned authority. We assure to make your marriage registration experience quite simple, easy and satisfactory. 
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <label class="seprator">&nbsp;</label>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section" style="background-color: #fff;">
+        <div class="container">
+            <div class="row">
+                <h1 class="main-headings1">
+                    <span class="hrLine"> &nbsp; Services &nbsp; </span>
+                </h1>
+                <div class="col-xs-12 col-sm-4">
+                    <h1 class="main-headings text-center">
+                        One Day Marriage Registration
+                    </h1>
+                    <br/>
+                    <p class="conditions">
+                        (Only for Hindu Married Couples)<br/><br/>
+                    </p>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibility">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Eligibility
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibilityDR">
+                        <span class="glyphicon glyphicon glyphicon-file"></span>
+                        Document Required
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#oneDayMarriageRegistrationForm">
+                        <span class="glyphicon glyphicon-hand-up"></span>
+                        Fill The Form
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#quick_query1">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        Book Us Now
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h1 class="main-headings text-center">
+                        Court Marriage
+                    </h1>
+                    <br/>
+                    <p class="conditions">
+                        (Solemnize & Register your Marriage)<br/>
+                        (Applicable to Non-Hindu Couples as Well)
+                    </p>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibility2">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Eligibility
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibility2DR">
+                        <span class="glyphicon glyphicon glyphicon-file"></span>
+                        Document Required
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#courtMarriage">
+                        <span class="glyphicon glyphicon-hand-up"></span>
+                        Fill The Form
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#quick_query2">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        Book Us Now
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h1 class="main-headings text-center">
+                        Marriage Registry
+                    </h1>
+                    <br/>
+                    <p class="conditions">
+                        (Registration of Marriages Solemnized or Celebrated)<br/>
+                        (Applicable to Non-Hindu Married Couples as Well)
+                    </p>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibility1">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Eligibility
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#eligibility1DR">
+                        <span class="glyphicon glyphicon glyphicon-file"></span>
+                        Document Required
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#marriageRegistrationForm">
+                        <span class="glyphicon glyphicon-hand-up"></span>
+                        Fill The Form
+                    </div>
+                    <div class="my-btn" data-toggle="modal" data-target="#quick_query3">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        Book Us Now
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br/><br/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantage Section -->
+    <section id="advantages" class="services-section">
+        <div class="container">
+            <div class="row">
+                <br/>
+                <h1 class="main-headings1">
+                    <span class="hrLine"> &nbsp; Advantages &nbsp; </span>
+                </h1>
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a1.png">
+                        </div>
+                        <p class="advantageHeading">Supreme Court Directive Compulsory Registration</p>
+                        <p class="aboutText1">
+                            The Hon’ble Supreme Court has made it mandatory for every Indians irrespective to their religion, caste and creed to obtain a marriage certificate and it is compulsory for all the newlyweds to apply for the same within 60 days of solemnization of their marriage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a2.png">
+                        </div>
+                        <p class="advantageHeading">Proof of Marriage</p>
+                        <p class="aboutText1">
+                            Marriage Certificate is the acceptable legal proof of a marriage recognized by the Courts in India and Abroad. It provides protection against false denial of marriage by either of the spouses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a3.png">
+                        </div>
+                        <p class="advantageHeading">Visa Application</p>
+                        <p class="aboutText1">
+                            Any application for spouse visa based on employment mandatorily requires a Marriage Certificate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a4.png">
+                        </div>
+                        <p class="advantageHeading">Bank Deposits / Life Insurance / Mutual Funds Claims</p>
+                        <p class="aboutText1">
+                            Marriage Certificate would now be compulsorily required to be presented, while claiming of Bank Deposits, Life Insurance Proceeds, Mutual Funds etc. in case of the death of the spouse. Also, required for inducting your partner/spouse as a legal nominee in various insurance related policies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a5.png">
+                        </div>
+                        <p class="advantageHeading">Family Disputes</p>
+                        <p class="aboutText1">
+                            Marriage Certificate is a prima facie proof of marriage and clarifies doubts on date and validity of the marriage in unforeseen and unhappy circumstances of disputes (whether civil or criminal) between the spouses relating to divorce, dowry, maintenance and other matrimonial related cases.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a6.png">
+                        </div>
+                        <p class="advantageHeading">Change of Spouse Name to Passport</p>
+                        <p class="aboutText1">
+                            Any addition of Spouse (Husband / Wife) name to Passport now requires a mandatory production of Marriage Certificate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a7.png">
+                        </div>
+                        <p class="advantageHeading">Property Proceedings/ Probation of Will</p>
+                        <p class="aboutText1">
+                            Marriage Certificate is required to file your claims to the wealth and property of your deceased spouse. It is also required to complete the probation of their will executed by them before their death. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="customWrapper">
+                        <div>
+                            <img src="images/a8.png">
+                        </div>
+                        <p class="advantageHeading">NRI Marriages</p>
+                        <p class="aboutText1">
+                            Marriage Certificate is a vital piece of evidence/proof against false denial of marriage, abandonment by husband and cruel and ill treatment in foreign land. It provides adequate grounds to proceed legally against husbands who was already married or who later got married to someone else after marrying you. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+                <br/><br/>
+            </div>
+        </div>
+    </section>
+    <label class="seprator">&nbsp;</label>
+    <!-- Why us Section -->
+    <section id="why-choose-us" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-headings1">
+                        <span class="hrLine"> &nbsp; Why Choose Us? &nbsp; </span>
+                    </h1>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 no-padding">
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <div class="customWrapper">
+                                <img src="images/w1.jpg" style="width: 120px;">
+                                <p class="advantageHeading">Door Step Service</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <div class="customWrapper">
+                                <img src="images/w2.jpg" style="width: 120px;">
+                                <p class="advantageHeading">Hassle Free Registration</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <div class="customWrapper">
+                                <img src="images/w3.jpg" style="width: 120px;">
+                                <p class="advantageHeading">Expert Services from Lawyers</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-2 text-center">
+                        <div class="customWrapper">
+                            <img src="images/w4.jpg" style="width: 120px;">
+                            <p class="advantageHeading">Accurate Filling of Forms and Filing of Documents</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <div class="customWrapper">
+                            <img src="images/w5.jpg" style="width: 120px;">
+                            <p class="advantageHeading">100 % Guaranteed Refund if you have to visit more than once - No Questions Asked</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing section -->
+    <section id="pricing" class="contact-section" style="background: #f3f3f3;">
+        <br/><br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-headings1">
+                        <span class="hrLine"> &nbsp; Pricing &nbsp; </span>
+                    </h1>
+
+                    <div id="exTab3" class="container"> 
+                        <ul  class="nav nav-pills">
+                            <li class="active">
+                                <a  href="#/home#pricing#1b" data-toggle="tab">One Day Marriage</a>
+                            </li>
+                            <li>
+                                <a href="#/home#pricing#2b" data-toggle="tab">Court Marriage</a>
+                            </li>
+                            <li>
+                                <a href="#/home#pricing#3b" data-toggle="tab">Marriage Registry</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="1b">
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 1999/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 10 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 7-10 days</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 5 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 2-3 days</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Tatkal</h2>
+                                        <h2 class="pricingValue">Rs. 4999/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 1 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 1-2 days</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>  
+                            </div>
+                            <div class="tab-pane" id="2b">
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 7 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your Personal Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 3499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 3 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your First & Second Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="tab-pane" id="3b">
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 7 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your Personal Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 3499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 3 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your First & Second Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <h2 class="pricingValue" style="margin-bottom: 0;">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/><br/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact/support section -->
+    <section id="support" class="contact-section">
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-headings1">
+                        <span class="hrLine"> &nbsp; Contact Us for Our Other Services &nbsp; </span>
+                    </h1>
+                    <div class="wrapper">
+                        <div class="col-xs-12 col-sm-6 no-padding">
+                            <p class="why-us-heading">Our Office</p>
+                            <p class="aboutText">
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                                VIM 146, Sailashree Vihar,<br/>
+                                &nbsp; &nbsp; Chandrasekharpur, Bhubaneswar,<br/>
+                                &nbsp; &nbsp; Odisha (751021)
+                            </p>
+                            <p class="aboutText">
+                                <span class="glyphicon glyphicon-earphone"></span>
+                                +91-7787000846
+                            </p>
+                            <p class="aboutText">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <a class="mailingLink" href="mailto:quicklegollp@gmail.com">quicklegollp@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 no-padding">
+                            <p class="why-us-heading">Our Other Services</p>
+                            <div class="otherServices">
+                                <ul>
+                                    <li>Rent/Lease/Sale Agreements</li>
+                                    <li>Property Registration, Mutation & Conversion</li>
+                                    <li>Partnership Deeds</li>
+                                    <li>Trust/Society/NGO/LLP Registrations</li>
+                                    <li>Startup Related Documentation</li>
+                                    <li>Affidavits</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <footer>
+            <span>Register Your Marriage | Copyright @ 2016</span>
+        </footer>
+    </section>
+    
+
+    <!-- one day marriage eigibility -->
+    <div class="modal fade" id="eligibility" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Eligibility for Same Day Registration</h4>
+                </div>
+                <div class="modal-body">
+                  <ol class="eligibilityList">
+                      <li>Both Bride & Groom must be <b>HINDUS</b></li>
+                      <li>Marriage must have been solemnized between both of them as per Hindu rites and customs</li>
+                      <li>Both Bride & Groom should not be less than <b>21 years</b> of age</li>
+                  </ol>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eligibilityDR" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Document Required</h4>
+                </div>
+                <div class="modal-body">
+                  <ol class="eligibilityList">
+                      <li>Form of Application - A & B for Registration of Marriage under Hindu Act, 1955 with Court Fees of Rs.4/- duly signed by both Husband and Wife.</li>
+                      <li>Joint Affidavit by Bride (Wife) + Groom (Husband) of Notary/Executive Magistrate that the couple is married under Hindu Marriage Act, 1955 and are staying together.</li>
+                      <li>Affidavit of Wife/Bride’s Father/Mother with the form.</li>
+                      <li>Affidavit of Husband/Groom’s Father/Mother with the form.</li>
+                      <li>Two passport size photographs of both the parties</li>
+                      <li>Joint photograph of marriage of both Wife/Bride and Husband/Groom [preferably the one with Hand-knot (Hatha-ganthee)].</li>
+                      <li>Invitation Cards of marriage of both sides - Bride and Groom. </li>
+                      <li>If marriage was solemnized in a religious place, a certificate from the priest is required who solemnized the marriage.</li>
+                      <li>Documentary evidence of date of birth of parties (Matriculation Certificate / Passport / Birth Certificate) -Both sides (Bride and Groom).</li>
+                      <li>ID-Proof (Aadhaar Card/Driving License/Voter ID Card) of both Bride and Groom and their respective parents/guardian</li>
+                      <li>Proof of Residence of Bride/Groom of the local area comprising of Patta/ROR of the House/Property & BMC Holding Tax Receipt for the financial year in which marriage was solemnized.</li>
+                      <li>Treasury Challan of Rs. 16/- (if application for registration of marriage is made within one month of solemnization of marriage) or Rs. 42/- (if application for registration of marriage has been made on expiry of one month of solemnization of marriage).</li>
+                      <li>Attested copy of divorce decree/order in case of a divorcee and death certificate of spouse in case of widow/widower.</li>
+                      <li>In case one of the parties belong to other than Hindu, Buddhist, Jain and Sikh religions, a conversion certificate from the priest who solemnized the marriage(in case of Hindu Marriage Act.</li>
+                  </ol>
+                </div>
+                <div class="modal-header btn-hide">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Timings (Only on working days)</h4>
+                </div>
+                <div class="modal-body">
+                  <ol class="eligibilityList">
+                      <li>WednesDay -   3P.M. to 5 P.M.</li>
+                      <li>SaturDay -   12P.M. to 2 P.M.</li>
+                  </ol>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- marriage registration -->
+    <div class="modal fade" id="eligibility1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Eligibility for Marriage Registration (Already Celebrated Marriage)</h4>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Both Bride & Groom must be 21 years of age and above.</li>
+                        <li>There is no bar on the religion of the Bride & Groom.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eligibility1DR" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Document Required</h4>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                      <li>Form of Application – Form V u/s 15 of the Special Marriage Act, 1954 for Application for Registration of Marriage.</li>
+                      <li>Joint Affidavit by Bride + Groom of Notary/Executive Magistrate that the marriage has been solemnized between both of them, are staying together, do not have more than one spouse living on the time of making the application or registration, have completed the age of 21 years, are within the degree of prohibited relationship of marriage.</li>
+                      <li>Affidavit of Bride in case of change in surname.</li>
+                      <li>Joint photograph (Postcard size) of marriage of both Bride and Groom [preferably the one with Hand-knot (Hatha-ganthee)].</li>
+                      <li>Invitation Cards of marriage of both sides - Bride and Groom. </li>
+                      <li>Proof of Date of Birth (Matriculation Certificate, Birth Certificate) -Both sides (Bride and Groom).</li>
+                      <li>ID-Proof (Aadhaar Card/Driving License/Voter ID Card) of both Bride and Groom and their respective parents/guardian.</li>
+                      <li>Proof of Residence (Local Area) of Husband(Bride-Groom)/Wife(Bride) – Rent Agreement (Min. 6 months of stay before applying) and Electricity Bill (Latest) or Patta/ROR, Holding Tax Receipt(Current Financial Year) and Electricity Bill (Latest).</li>
+                      <li>3 Nos. of Witness along with their ID Proof.</li>
+                  </ol>
+                </div>
+                <div class="modal-header btn-hide">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Timings (Only on working days)</h4>
+                </div>
+                <div class="modal-body">
+                  <ol class="eligibilityList">
+                      <li>WednesDay -   3P.M. to 5 P.M.</li>
+                      <li>SaturDay -   12P.M. to 2 P.M.</li>
+                  </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Court Marriage -->
+    <div class="modal fade" id="eligibility2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Eligibility for Court Marriage</h4>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Applicable to unmarried/divorced couples.</li>
+                        <li>Age limit- Bride- 18, Bride Groom – 21.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eligibility2DR" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Document Required</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Form of Application – Notice of Intending Marriage u/s 5 of the Special Marriage Act, 1954.</li>
+                            <li>Passport size photograph of Both Parties (3 Nos.).</li>
+                            <li>Affidavit of Bride in case of change in surname.</li>
+                            <li>Proof of Date of Birth (Matriculation Certificate, Birth Certificate) -Both sides (Bride and Groom).</li>
+                            <li>ID-Proof (Aadhaar Card/Driving License/Voter ID Card) of both Bride and Groom and their respective parents/guardian</li>
+                            <li>Proof of Residence (Local Area) of Husband(Bride-Groom)/Wife(Bride) – Rent Agreement (Min. 6 months of stay before applying) and Electricity Bill (Latest) or Patta/ROR, Holding Tax Receipt(Current Financial Year) and Electricity Bill (Latest). </li>
+                            <li>3 Nos. of Witness along with their ID Proof.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-header btn-hide">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Timings (Only on working days)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ol class="eligibilityList">
+                          <li>WednesDay -   3P.M. to 5 P.M.</li>
+                          <li>SaturDay -   12P.M. to 2 P.M.</li>
+                      </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="quick_query" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Quick Query</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                            <form>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="text" ng-model="quickDetail.name" placeholder="Full Name" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="email" ng-model="quickDetail.email" placeholder="Email-ID" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="number" ng-model="quickDetail.number" placeholder="Contact No." required name="" class="form-control">
+                                    </div>
+                                </div>
+<!--                                 <div class="col-xs-12 col-md-6">
+                                    <div class="inputWrap1">
+                                        <input type="text" placeholder="Subject" required name="" class="form-control">
+                                    </div>
+                                </div> -->
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <textarea placeholder="Post Your Legal Query" ng-model="quickDetail.querry" class="form-control textArea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveQuick()">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="quick_query1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Book Us For One Day Marriage Registration</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                            <form>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="text" ng-model="bookingDetail.name"  placeholder="Full Name" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="email" ng-model="bookingDetail.email"  placeholder="Email-ID" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="number" ng-model="bookingDetail.number"  placeholder="Contact No." required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="inputWrap1">
+                                        <input type="text"  ng-model="bookingDetail.date"  placeholder="Booking Date" onfocus="this.type = 'date'" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <textarea placeholder="Comments/Remarks" ng-model="bookingDetail.querry"  class="form-control textArea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveBooking('One Day Marriage','quick_query1')">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="modal fade" id="quick_query2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title"> Book Us For Court Marriage</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                            <form>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="text" ng-model="bookingDetail.name"  placeholder="Full Name" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="email" ng-model="bookingDetail.email"  placeholder="Email-ID" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="number" ng-model="bookingDetail.number"  placeholder="Contact No." required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="inputWrap1">
+                                        <input type="text"  ng-model="bookingDetail.date"  placeholder="Booking Date" onfocus="this.type = 'date'" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <textarea placeholder="Comments/Remarks" ng-model="bookingDetail.querry"  class="form-control textArea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveBooking('Court Marriage','quick_query2')">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="modal fade" id="quick_query3" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Book Us For Marriage Registry</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                            <form>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="text" ng-model="bookingDetail.name"  placeholder="Full Name" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="email" ng-model="bookingDetail.email"  placeholder="Email-ID" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="number" ng-model="bookingDetail.number"  placeholder="Contact No." required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="inputWrap1">
+                                        <input type="text"  ng-model="bookingDetail.date"  placeholder="Booking Date" onfocus="this.type = 'date'" required name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <textarea placeholder="Comments/Remarks" ng-model="bookingDetail.querry"  class="form-control textArea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="inputWrap1">
+                                        <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveBooking('Marriage Registry','quick_query3')">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="oneDayMarriageRegistrationForm" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Apply for One Day Marriage Registration New</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                        <form>
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bridegroom/Husband :</b></p>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husfather"  placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather's Name" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husmother"  placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husAddr"  placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husGuard"  placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husRelation"  placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husGaurdpermanentaddr"  placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husGaurdcrntaddr"  placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husNationality"  placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husReligion"  placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="addOnedayDetail.husStatus" >
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husAge"  placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.husProfession"  placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="addOnedayDetail.husNumber"  placeholder="Contact No." required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="addOnedayDetail.husEmail"  placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bride/Wife :</b></p>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifefather" placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather’s Name" title="For Affidavit Purpose" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifemother" placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeAddr" placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeGuard" placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeRelation" placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeGaurdpermanentaddr" placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeGaurdcrntaddr" placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeNationality" placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeReligion" placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="addOnedayDetail.wifeStatus">
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeAge" placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.wifeProfession" placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="addOnedayDetail.wifeNumber" placeholder="Contact No." class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="addOnedayDetail.wifeEmail" placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12">
+                                <p>Marriage Details :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.placemarriage" placeholder="Place of Marriage" class="form-control" name="">
+                                </div>
+                            </div> -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.datemarriage" onfocus="this.type = 'date'" placeholder="Marriage Date" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness1Name" placeholder="Name of First Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness1Addr" placeholder="Address of First Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness2Name" placeholder="Name of Second Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness2Addr" placeholder="Address of Second Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness3Name" placeholder="Name of Third Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="addOnedayDetail.witness3Addr" placeholder="Address of Third Witness" required class="form-control" name="">
+                                </div>
+                            </div> -->
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12">
+                                <p>Select Package :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="addOnedayDetail.package">
+                                        <option value="" selected disabled>Please Select Package</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="premium">Premium</option>
+                                        <option value="tatkal">Tatkal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <span class="glyphicon glyphicon-info-sign" data-dismiss="modal" data-toggle="modal" data-target="#pi1" id="pi1Btn" style="font-size: 24px; margin-top: 4px; cursor: pointer;" title="Click to Know About Packages"></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 text-center">
+                                <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveOneday()">
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="marriageRegistrationForm" role="dialog">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Apply for Marriage Registry</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                        <form>
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bridegroom/Husband :</b></p>
+                                                          <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husfather"  placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather's Name" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husmother"  placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husAddr"  placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husGuard"  placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husRelation"  placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husGaurdpermanentaddr"  placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husGaurdcrntaddr"  placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husNationality"  placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husReligion"  placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="registermarriageDetail.husStatus" >
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husAge"  placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.husProfession"  placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="registermarriageDetail.husNumber"  placeholder="Contact No." required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="registermarriageDetail.husEmail"  placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bride/Wife :</b></p>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifefather" placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather’s Name" title="For Affidavit Purpose" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifemother" placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeAddr" placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeGuard" placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeRelation" placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeGaurdpermanentaddr" placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeGaurdcrntaddr" placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeNationality" placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeReligion" placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="registermarriageDetail.wifeStatus">
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeAge" placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.wifeProfession" placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="registermarriageDetail.wifeNumber" placeholder="Contact No." class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="registermarriageDetail.wifeEmail" placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12">
+                                <p>Marriage Details :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.placemarriage" placeholder="Place of Marriage" class="form-control" name="">
+                                </div>
+                            </div> -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.datemarriage" onfocus="this.type = 'date'" placeholder="Marriage Date" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness1Name" placeholder="Name of First Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness1Addr" placeholder="Address of First Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness2Name" placeholder="Name of Second Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness2Addr" placeholder="Address of Second Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness3Name" placeholder="Name of Third Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="registermarriageDetail.witness3Addr" placeholder="Address of Third Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div> -->
+
+                            <div class="col-xs-12">
+                                <p>Select Package :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="registermarriageDetail.package">
+                                        <option value="" selected disabled>Please Select Package</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="premium">Premium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <span class="glyphicon glyphicon-info-sign" data-dismiss="modal" data-toggle="modal" data-target="#pi3" id="pi3Btn" style="font-size: 24px; margin-top: 4px; cursor: pointer;" title="Click to Know About Packages"></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 text-center">
+                                <input type="submit" value="Submit" class="btn btn-primary" name="" ng-click="saveRegisterMarriage()">
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+                    </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="modal fade" id="courtMarriage" role="dialog">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Apply for Court Marriage</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                        <form>
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bridegroom/Husband :</b></p>
+                                  <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husfather"  placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather's Name" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husmother"  placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husAddr"  placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husGuard"  placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husRelation"  placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husGaurdpermanentaddr"  placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husGaurdcrntaddr"  placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husNationality"  placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husReligion"  placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="courtDetail.husStatus" >
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husAge"  placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.husProfession"  placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="courtDetail.husNumber"  placeholder="Contact No." required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="courtDetail.husEmail"  placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <p><b>Detail of Bride/Wife :</b></p>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeName" placeholder="Full Name" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeDob" onfocus="this.type = 'date'" placeholder="Date of Birth" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifefather" placeholder="Father's/Guardian's Name" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Grandfather’s Name" title="For Affidavit Purpose" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifemother" placeholder="Mother's Name" class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeAddr" placeholder="Present Address" required class="form-control" name="">
+                                </div>
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeGuard" placeholder="Name of Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeRelation" placeholder="Realationship" required class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" placeholder="Name of Guardian's Father" required title="For Affidavit Purpose" class="form-control" name="">
+                                </div> -->
+                                <!-- <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeGaurdpermanentaddr" placeholder="Permanent Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeGaurdcrntaddr" placeholder="Current Address of Parents/Guardian" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeNationality" placeholder="Nationality" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeReligion" placeholder="Religion" required class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="courtDetail.wifeStatus">
+                                        <option value="" selected disabled>Status before Marriage</option>
+                                        <option value="unmarried">Un Married</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widower">Widower</option>
+                                    </select>
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeAge" placeholder="Age at the Time of Marriage" class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.wifeProfession" placeholder="Profession" required class="form-control" name="">
+                                </div> -->
+                                <div class="inputWrap1">
+                                    <input type="number" ng-model="courtDetail.wifeNumber" placeholder="Contact No." class="form-control" name="">
+                                </div>
+                                <div class="inputWrap1">
+                                    <input type="email" ng-model="courtDetail.wifeEmail" placeholder="Email-ID" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12">
+                                <p>Marriage Details :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.placemarriage" placeholder="Place of Marriage" class="form-control" name="">
+                                </div>
+                            </div> -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.datemarriage" onfocus="this.type = 'date'" placeholder="Marriage Date" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <!-- <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness1Name" placeholder="Name of First Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness1Addr" placeholder="Address of First Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness2Name" placeholder="Name of Second Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness2Addr" placeholder="Address of Second Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness3Name" placeholder="Name of Third Witness" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <input type="text" ng-model="courtDetail.witness3Addr" placeholder="Address of Third Witness" required class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div> -->
+
+                            <div class="col-xs-12">
+                                <p>Select Package :</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br/>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <select class="form-control" required ng-model="courtDetail.package">
+                                        <option value="" selected disabled>Please Select Package</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="premium">Premium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="inputWrap1">
+                                    <span class="glyphicon glyphicon-info-sign" data-toggle="modal"  data-dismiss="modal" data-target="#pi2" id="pi2Btn" style="font-size: 24px; margin-top: 4px; cursor: pointer;" title="Click to Know About Packages"></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="col-xs-12 text-center">
+                                <input type="button" value="Submit" class="btn btn-primary" name="" ng-click="saveCourt()">
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="modal fade" id="about1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Web based platform to save time, money and hassle</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="aboutText">
+                            We all know about the hassles that we need to face when we need to perform tasks in which we need to visit courts of law or government offices, prepare different documents, fulfill rudimentary formalities, and all this at the cost of our precious time and money. It is quite plausible to find yourself knocking the doors of the lawyers’ office or government agencies, middlemen etc. seeking their assistance for getting your marriage registered. Why at all should you go through these hassles by unnecessarily wasting time, money and efforts? The smartest thing would however be to pass the buck onto us for taking care of your registration requirements, while you sit back and relax. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Hassle-free Services guaranteed at your Doorstep</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="aboutText">
+                            Making a wish from the comfort of one’s home and getting the services delivered at the doorstep is what everybody craves for. Isn’t it? Quickbond provides hassle-free and comprehensive facilities like free doorstep documents collection as well as delivery of marriage certificate at the clients’ preferred place, all of this at a dime’s cost. This we call as Being Penny wise and Pound Smarter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Active Support & Assistance from Industry Experts</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="aboutText">
+                            With a repository of information relating to the procedure and paperwork concerning marriage registration, we ensure you are well informed and educated throughout your association with us. Since, your association is valuable for us, we are committed to add value to it by providing you all kinds of legal and miscellaneous assistance from recognized industry experts and lawyers. We believe that your sense of security in the entire transaction is paramount.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pi1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#oneDayMarriageRegistrationForm">&times;</button>
+                      <h4 class="modal-title">One Day Marriage Registration Packages</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-sm-4">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 1999/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 10 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 7-10 days</li>
+                                            </ul>
+                                        </div>
+                                          <a>
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="onePackagr('standard')">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 5 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 2-3 days</li>
+                                            </ul>
+                                        </div>
+                                         <a>
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="onePackagr('premium')">Select Package</h2>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="pricingWrapper">
+                                        <h2>Tatkal</h2>
+                                        <h2 class="pricingValue">Rs. 4999/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>Preparation of File</li>
+                                                <li>Marriage Registration Date available within 1 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to represent you during your Visit to Marriage Registrar</li>
+                                                <li>Availability of Marriage Certificate in 1-2 days</li>
+                                            </ul>
+                                        </div>
+                                        <a>
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="onePackagr('tatkal')">Select Package</h2>
+                                        </a>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="pi2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#courtMarriage">&times;</button>
+                      <h4 class="modal-title">Court Marriage Registration Packages</h4>
+                    </div>
+                </div>
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-sm-6">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 7 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your Personal Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a >
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="courtPackagr('standard')">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 3499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 3 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your First &amp; Second Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a >
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="courtPackagr('premium')">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="modal fade" id="pi3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#marriageRegistrationForm">&times;</button>
+                      <h4 class="modal-title">Marriage Registry Packages</h4>
+                    </div>
+                </div>
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-sm-6">
+                                    <div class="pricingWrapper">
+                                        <h2>Standard</h2>
+                                        <h2 class="pricingValue">Rs. 2499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 7 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your Personal Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a >
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="registryPackagr('standard')">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="pricingWrapper">
+                                        <h2>Premium</h2>
+                                        <h2 class="pricingValue">Rs. 3499/-</h2>
+                                        <div class="smallWrapper">
+                                            <ul>
+                                                <li>First Appearance Date within 3 Days</li>
+                                            </ul>
+                                            <h2>Includes</h2>
+                                            <ul>
+                                                <li>Door Step Collection of Papers</li>
+                                                <li>Lawyer to Represent you during your First &amp; Second Appearance</li>
+                                            </ul>
+                                        </div>
+                                        <a >
+                                            <h2 class="pricingValue" style="margin-bottom: 0;cursor: pointer;" ng-click="registryPackagr('premium')">Select Package</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- <div class="contactSupport" data-toggle="modal" data-target="#quick_query">
+        <span class="glyphicon glyphicon-earphone"></span>
+    </div> -->
+
+
+
+
+     <div class="modal fade" id="sucess" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Thank you</h4>
+                    </div>
+                    <div class="modal-body" style="padding-left: 0; padding-right: 0;">
+                            <form>
+                            <div class="modal-body">
+                                    <p class="aboutText">
+                                  Your Request Has Been Submitted.We Will Get Back To You Shortly 
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </div>
