@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.justifyp {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
  @font-face {
     font-family: nunitoRegular;
     src: url(../fonts/Nunito-Regular.ttf);
@@ -25,6 +30,9 @@ html {
 }
 
 @media(min-width:767px) {
+    .padtop {
+        padding-top: 25px;
+    }
     .navbar {
         padding: 20px 0 !important;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out !important;
@@ -447,6 +455,10 @@ body.modal-open {
     overflow: hidden;
 }
 
+.navmar {
+        margin-top: -50px;
+        margin-left: 115px;
+    }
 
 @media (max-width: 768px){
     .navbar-nav{
@@ -459,9 +471,21 @@ body.modal-open {
     .top-nav-collapse .navbar-nav > li > a{
         color: #fff !important;
     }
+    .navmar {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+
 }
 
 .temp-size {
     font-size: 12px;
     height: 23px;
+}
+
+
+
+@media (min-width: 770px) {
+     
 }
